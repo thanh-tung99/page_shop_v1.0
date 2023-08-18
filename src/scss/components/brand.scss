@@ -1,0 +1,67 @@
+.brand {
+    padding-top: 40px;
+    
+}
+
+
+.brand__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E7E5EA;
+    margin-bottom: 10px;
+
+}
+
+.brand__heading {
+    color: #2D3958;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 155.556%;
+
+}
+
+.brand__icon {
+    font-size: 14px;
+    color: #888682;
+    padding: 6px;
+
+}
+
+.brand__icon:hover {
+    cursor: pointer;
+    color: #4F77FF;
+
+}
+
+.brand__list {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.brand__item {
+    color: #333;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+.brand__input {
+    
+}
+
+.brand__input:hover {
+    cursor: pointer;
+
+}

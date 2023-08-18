@@ -1,0 +1,133 @@
+.devices {
+    padding-top: 14px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E7E5EA;
+
+}
+
+
+.devices__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #E7E5EA;
+    padding-bottom: 8px;
+    margin-bottom: 22px;
+
+
+}
+
+.devices__heading {
+    color: #2D3958;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 155.556%;
+    padding-bottom: 16px;
+
+}
+
+.devices__short {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid #E7E5EA;
+
+}
+
+.devices__input {
+    outline: none;
+    border: none;
+    color: #7B88A8;
+    background-color: #FFF;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:162.5%;
+    padding: 11px 80px 11px 18px;
+
+}
+
+.devices__icon {
+    color: #888682;
+    font-size: 14px;
+    padding: 16px;
+
+}
+
+.devices__icon:hover{
+    cursor: pointer;
+    color: #4F77FF;
+
+}
+
+
+.devices__content {
+    
+}
+
+.devices__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.devices__link {
+    text-decoration: none;
+    overflow: hidden;
+
+}
+
+.devices__img {
+    width: 100%;
+    transition: scale 400ms;
+
+}
+
+.devices__name {
+    color: #2D3958;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 155.556%;
+    padding: 16px 0px 8px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.devices__price {
+    color: #7B88A8;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162.5%;
+    padding: 8px 0px 16px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.devices__link:hover {
+    cursor: pointer;
+}
+
+.devices__link:hover .devices__name {
+    color: $colorSecondary;
+    text-decoration: underline;
+
+}
+
+.devices__link:hover .devices__img {
+    scale: 110%;
+    
+}

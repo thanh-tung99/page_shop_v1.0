@@ -1,0 +1,174 @@
+.footer {
+    background-color: #292F3A;
+    height: 546px;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+
+// logo
+.footer__logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.footer__logo-img {
+    width: 32px;
+    height: 44px;
+
+}
+
+.footer__logo-name {
+    width: 134px;
+    color:  #FFF;
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 133.333%;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+
+.footer__heading {
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 145.455%;
+
+}
+
+.footer__list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer__item {
+
+}
+
+.footer__link {
+    display: flex;
+    text-decoration: none;  
+    padding: 10px 0;
+    align-items: center;
+    color: #E7E5EA;
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 171.429%;
+    text-transform: uppercase;
+
+}
+
+.footer__link:hover{
+    color: #85a0fa;
+
+}
+
+// Newsletter
+.footer__description-top {
+    color: #E7E5EA;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162.5%;
+    padding: 10px 0;
+
+}
+
+.footer__input {
+    display: flex;
+    padding: 10px 0;
+
+}
+
+.footer__input-mail {
+    width: 235px;
+    height: 48px;
+    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid #E7E5EA;
+    color: $text-text;
+    background-color: #FFF;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162.5%;
+}
+
+.footer__btn {
+    height: 50px;
+    padding: 13px 24px;   
+    border-radius: 5px;
+    background-color:  #4F77FF;
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 171.429%;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+
+.footer__btn:hover {
+    background-color: #85a0fa;
+    cursor: pointer;
+
+}
+
+.footer__description-bottom {
+    color: #E7E5EA;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    padding: 10px 0;
+
+}
+
+
+// socials
+.footer__bottom {
+    margin-top: 100px;
+    border-top: 1px solid #7B88A8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer__text {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.footer__socials {
+    text-align: end;
+
+}
+
+.footer__socials-link {
+    text-decoration: none;
+    font-size: 54px;
+    color: #4F77FF;
+    padding: 0px 6px;
+
+}
+
+.footer__socials-link:hover {
+    color: #85a0fa;
+
+}

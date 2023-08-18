@@ -1,0 +1,34 @@
+// Abstracts
+@import './abstracts/variables.scss';
+
+// Base
+@import './base/normalize.scss';
+@import './base/reset.scss';
+
+// Layout
+@import './layout/grid.scss';
+
+// Components
+@import './components/pageHeader.scss';
+@import './components/ourShop.scss';
+
+@import './components/content.scss';
+
+@import './components/category.scss';
+@import './components/brand.scss';
+@import './components/price.scss';
+
+@import './components/devices.scss';
+
+@import './components/pagination.scss';
+
+@import './components/getHelp.scss';
+@import './components/footer.scss';
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+.our-shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.our-shop__heading {
+    width: 870px;
+    color: $text-heading;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 116.667%;
+    padding-bottom: 30px;
+
+}
+
+.our-shop__description {
+    width: 870px;
+    height: 18px;
+    color: $text-heading;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: uppercase;
+
+}
+
+.our-shop__description--color {
+    color: $text-text;
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+
+}
