@@ -1,42 +1,34 @@
-.getHelp {
+.get-help {
     position: relative;
-    height: 500px;
-    z-index: 1;
+    padding-bottom: 130px;
 
 }
 
-.getHelp__background {
+.get-help__background {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     width: 100%;
     height: 100%;
 
 }
 
-.getHelp__img {
+.get-help__img {
     width: 100%;
     height: 100%;
 }
 
-.getHelp__content {
+.get-help__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 80px;
-
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+ 
+    transform: translateY(10%);
 
 }
 
-.getHelp__heading {
+.get-help__heading {
     width: 870px;
     color: $text-heading;
     text-align: center;
@@ -49,7 +41,7 @@
 
 }
 
-.getHelp__description {
+.get-help__description {
     width: 870px;
     color: $text-text;
     text-align: center;
@@ -62,14 +54,14 @@
 
 }
 
-.getHelp__btn {
+.get-help__btn {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-.getHelp__chat-now {  
+.get-help__chat-now {  
     height: 48px;
     padding: 13px 24px;   
     border-radius: 5px;
@@ -81,10 +73,12 @@
     font-weight: 500;
     line-height: 171.429%;
     text-transform: uppercase;
+    transition: all 0.3s;
 
 }
 
-.getHelp__chat-now:hover {
+.get-help__chat-now:hover {
     cursor: pointer;
     background-color: #85a0fa;
+
 }

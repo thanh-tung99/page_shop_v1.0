@@ -1,5 +1,4 @@
 .page-header {
-    position: relative;
     height: 500px;
 
 }
@@ -55,7 +54,6 @@
 // Menu
 .page-header__menu {
     display: flex;
-    width: 470px;
     justify-content: center;
     align-items: center;
 
@@ -126,8 +124,11 @@
 
 .active {
     position: relative;
-    color: $text-heading;
 
+}
+
+.active a {
+    color: #2D3958;
 }
 
 .active::before {
@@ -161,6 +162,7 @@
     color: $text-text;
     font-size: 20px;
     cursor: pointer;
+    transition: all 0.1s;
 
 }
 
@@ -178,6 +180,8 @@
     font-size: 20px;
     cursor: pointer;
     position: relative;
+    transition: all 0.1s;
+
 
 }
 
@@ -219,9 +223,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.4s;
 
 }
 
 .btn-signup:hover {
     background-color: #85a0fa;
 }
+
+

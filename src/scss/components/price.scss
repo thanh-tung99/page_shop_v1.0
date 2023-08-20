@@ -81,10 +81,20 @@
     outline: none;
     border: none;
     padding: 6px;
+    border-radius: 4px;
+
+    width: 50px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
 
 }
 
 .price__filter:hover {
-    color: #85a0fa;
+    color: #fff;
     cursor: pointer;
+    background-color: #4F77FF;;
+
 }

@@ -313,7 +313,7 @@ template {
 
 :root {
   --grid: 12;
-  --grid-container-width: 1700px;
+  --grid-container-width: 1200px;
   --grid-container-gap: 15px;
   --grid-col-gap-vertical: 30px;
   --grid-col-gap-horizontal: 30px;
@@ -403,7 +403,6 @@ h6 {
   }
 }
 .page-header {
-  position: relative;
   height: 500px;
 }
 
@@ -450,7 +449,6 @@ h6 {
 
 .page-header__menu {
   display: flex;
-  width: 470px;
   justify-content: center;
   align-items: center;
 }
@@ -507,6 +505,9 @@ h6 {
 
 .active {
   position: relative;
+}
+
+.active a {
   color: #2D3958;
 }
 
@@ -537,6 +538,7 @@ h6 {
   color: #7B88A8;
   font-size: 20px;
   cursor: pointer;
+  transition: all 0.1s;
 }
 
 .page-header__search:hover {
@@ -552,6 +554,7 @@ h6 {
   font-size: 20px;
   cursor: pointer;
   position: relative;
+  transition: all 0.1s;
 }
 
 .page-header__bag:hover {
@@ -587,6 +590,7 @@ h6 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.4s;
 }
 
 .btn-signup:hover {
@@ -597,12 +601,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(100%);
 }
 
 .our-shop__heading {
@@ -684,7 +683,6 @@ h6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 171.429%;
-  padding: 10px 0;
 }
 
 .category__show {
@@ -698,9 +696,63 @@ h6 {
   text-align: center;
   justify-content: center;
   gap: 10px;
+  padding: 8px 20px 8px 0px;
+}
+.category__check span {
+  position: relative;
+  display: block;
+  background-color: #E7E5EA;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.category__check span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: black;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: 0.3s;
+}
+.category__check span .category__tick {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.4s;
+  transform: translate(-50%, -60%);
+}
+.category__check .category__input {
+  display: none;
+}
+.category__check .category__input:checked ~ span::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.category__check .category__input:checked ~ span .category__tick {
+  color: white;
+  display: block;
+  opacity: 1;
+}
+.category__check .category__text {
+  color: #333;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 171.429%;
 }
 
-.category__input:hover {
+.category__check:hover {
   cursor: pointer;
 }
 
@@ -714,15 +766,18 @@ h6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 171.429%;
-  padding: 10px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
 
-.category__sub-item:first-child {
-  padding-top: 20px;
+.category__sub-text {
+  color: #7B88A8;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 171.429%;
 }
 
 .brand {
@@ -763,19 +818,74 @@ h6 {
 }
 
 .brand__item {
-  color: #333;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.brand__check {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 20px;
+}
+.brand__check span {
+  position: relative;
+  display: block;
+  background-color: #E7E5EA;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.brand__check span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: black;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: 0.3s;
+}
+.brand__check span .brand__tick {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.4s;
+  transform: translate(-50%, -60%);
+}
+.brand__check .brand__input {
+  display: none;
+}
+.brand__check .brand__input:checked ~ span::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.brand__check .brand__input:checked ~ span .brand__tick {
+  color: white;
+  display: block;
+  opacity: 1;
+}
+.brand__check .brand__text {
+  color: #7B88A8;
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 171.429%;
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
 }
 
-.brand__input:hover {
+.brand__check:hover {
   cursor: pointer;
 }
 
@@ -853,11 +963,19 @@ h6 {
   outline: none;
   border: none;
   padding: 6px;
+  border-radius: 4px;
+  width: 50px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
 }
 
 .price__filter:hover {
-  color: #85a0fa;
+  color: #fff;
   cursor: pointer;
+  background-color: #4F77FF;
 }
 
 .devices {
@@ -1017,41 +1135,33 @@ h6 {
   line-height: 50px;
 }
 
-.getHelp {
+.get-help {
   position: relative;
-  height: 500px;
-  z-index: 1;
+  padding-bottom: 130px;
 }
 
-.getHelp__background {
+.get-help__background {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
   width: 100%;
   height: 100%;
 }
 
-.getHelp__img {
+.get-help__img {
   width: 100%;
   height: 100%;
 }
 
-.getHelp__content {
+.get-help__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 80px;
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(10%);
 }
 
-.getHelp__heading {
+.get-help__heading {
   width: 870px;
   color: #2D3958;
   text-align: center;
@@ -1063,7 +1173,7 @@ h6 {
   padding-bottom: 15px;
 }
 
-.getHelp__description {
+.get-help__description {
   width: 870px;
   color: #7B88A8;
   text-align: center;
@@ -1075,13 +1185,13 @@ h6 {
   padding-bottom: 78px;
 }
 
-.getHelp__btn {
+.get-help__btn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.getHelp__chat-now {
+.get-help__chat-now {
   height: 48px;
   padding: 13px 24px;
   border-radius: 5px;
@@ -1093,18 +1203,17 @@ h6 {
   font-weight: 500;
   line-height: 171.429%;
   text-transform: uppercase;
+  transition: all 0.3s;
 }
 
-.getHelp__chat-now:hover {
+.get-help__chat-now:hover {
   cursor: pointer;
   background-color: #85a0fa;
 }
 
 .footer {
   background-color: #292F3A;
-  height: 546px;
-  position: relative;
-  z-index: 1;
+  padding: 100px 0px 20px 0px;
 }
 
 .footer__logo {
@@ -1154,6 +1263,7 @@ h6 {
   font-weight: 500;
   line-height: 171.429%;
   text-transform: uppercase;
+  transition: all 0.3s;
 }
 
 .footer__link:hover {
@@ -1201,6 +1311,7 @@ h6 {
   line-height: 171.429%;
   text-transform: uppercase;
   margin-left: 8px;
+  transition: all 0.3s;
 }
 
 .footer__btn:hover {
@@ -1242,6 +1353,7 @@ h6 {
   font-size: 54px;
   color: #4F77FF;
   padding: 0px 6px;
+  transition: all 0.3s;
 }
 
 .footer__socials-link:hover {

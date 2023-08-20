@@ -49,7 +49,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 171.429%;
-    padding: 10px 0;
+    // padding: 10px 0;
 
 }
 
@@ -65,14 +65,82 @@
     text-align: center;
     justify-content: center;
     gap: 10px;
+    padding: 8px 20px 8px 0px;
+
+    span {
+        position: relative;
+        display: block;
+        background-color: #E7E5EA;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background-color: black;
+            opacity: 0;
+            transform: scale(0.3);
+            transition: 0.3s;
+
+        }
+
+        .category__tick {
+            display: none;
+            position: absolute;
+            font-size: 12px;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            opacity: 0;
+            transition: 0.4s;
+            transform: translate(-50%, -60%);
+        
+        }
+
+    }
+
+    .category__input {
+        display: none;
+        &:checked {
+            ~ span {
+                &::after {
+                    opacity: 1;
+                    transform: scale(1);
+
+                }
+
+                .category__tick {
+                    color: white;
+                    display: block;
+                    opacity: 1;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .category__text {
+        color: #333;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 171.429%
+
+    }
 
 }
 
-.category__input {
-
-}
-
-.category__input:hover {
+.category__check:hover {
     cursor: pointer;
     
 }
@@ -80,7 +148,6 @@
 
 .category__sub {
     list-style: none;
-    // padding-left: 0;
 
 }
 
@@ -91,7 +158,6 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 171.429%;
-    padding: 10px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -99,7 +165,11 @@
 
 }
 
-.category__sub-item:first-child {
-    padding-top: 20px;
+.category__sub-text {
+    color: #7B88A8;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
 
 }
