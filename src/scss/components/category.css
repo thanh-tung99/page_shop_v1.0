@@ -1,0 +1,141 @@
+.category {
+  padding-top: 20px;
+}
+
+.category__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E7E5EA;
+  margin-bottom: 10px;
+}
+
+.category__heading {
+  color: #2D3958;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 155.556%;
+}
+
+.category__icon {
+  font-size: 14px;
+  color: #888682;
+  padding: 6px;
+}
+
+.category__icon:hover {
+  cursor: pointer;
+  color: #4F77FF;
+}
+
+.category__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.category__item {
+  color: #333;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 171.429%;
+}
+
+.category__show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category__check {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 20px 8px 0px;
+}
+.category__check span {
+  position: relative;
+  display: block;
+  background-color: #E7E5EA;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.category__check span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: black;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: 0.3s;
+}
+.category__check span .category__tick {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.4s;
+  transform: translate(-50%, -60%);
+}
+.category__check .category__input {
+  display: none;
+}
+.category__check .category__input:checked ~ span::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.category__check .category__input:checked ~ span .category__tick {
+  color: white;
+  display: block;
+  opacity: 1;
+}
+.category__check .category__text {
+  color: #333;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 170%;
+  margin-top: -2px;
+}
+
+.category__check:hover {
+  cursor: pointer;
+}
+
+.category__sub {
+  list-style: none;
+}
+
+.category__sub-item {
+  color: #7B88A8;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 171.429%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.category__sub-text {
+  color: #7B88A8;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 170%;
+  margin-top: -3px;
+}/*# sourceMappingURL=category.css.map */

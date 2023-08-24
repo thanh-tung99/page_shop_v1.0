@@ -2,40 +2,99 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(100%);
+    overflow: hidden;
+    padding: 50px 0 100px;
+    
+    @media (max-width: 575px) {
+        
+    }
+    
+    @media (min-width: 575px) {
+        padding: 100px 0 150px;
+        
+    }
+    
+    @media (min-width: 768px) {
+        padding: 150px 0 200px;
+              
+    }
+        
+    @media (min-width: 992px) {
+            
+            
+    }
 
 }
 
 .our-shop__heading {
-    width: 870px;
     color: $text-heading;
     text-align: center;
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 500;
-    line-height: 116.667%;
-    padding-bottom: 30px;
+    line-height: 110%;
+    
+    @media (max-width: 575px) {
+        
+    }
+        
+    @media (min-width: 575px) {
+        line-height: 116.667%;
+        padding-bottom: 30px;
+        
+    }
+    
+    @media (min-width: 768px) {
+        font-size: 40px;
+        
+    }
+    
+    @media (min-width: 992px) {
+        font-size: 48px;
+        width: 870px;
+
+            
+    }
 
 }
 
 .our-shop__description {
-    width: 870px;
-    height: 18px;
     color: $text-heading;
     text-align: center;
     font-family: Outfit;
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 500;
     line-height: 160%;
     text-transform: uppercase;
+    
+    
+    @media (max-width: 575px) {
+        padding-top: 10px;
+        
+        
+    }
+        
+    @media (min-width: 575px) {
+        font-size: 13px;
+        
+        
+    }
+    
+    @media (min-width: 768px) {
+        font-size: 15px;
+        width: 870px;
+        height: 18px;
+            
+    }
+        
+    @media (min-width: 992px) {
+            
+            
+    }
 
 }
 
 .our-shop__description--color {
     color: $text-text;
-    font-family: Outfit;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 24px;
     text-transform: uppercase;
 
 }

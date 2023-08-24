@@ -1,26 +1,18 @@
 .page-header {
-    height: 500px;
+    background-image: url(../../../assets/img/img_background-head.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
+
+
+
 .page-header__navigate {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 16px;
 
-}
-
-.page-header__background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-
-}
-
-.page-header__img {
-    width: 100%;
 }
 
 
@@ -30,32 +22,69 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    gap: 8px;
 
 }
 
 .page-header__logo-img {
-    width: 32px;
-    height: 44px;
-    
+    display: block;
+    width: 25px;
+    height: 35px;
+
+    @media (max-width: 575px) {
+        
+        
+    }
+        
+    @media (min-width: 575px) {
+      
+            
+    }
+        
+    @media (min-width: 768px) {
+        width: 32px;
+        height: 44px;
+          
+    }
+        
+    @media (min-width: 992px) {
+             
+    }
+
 }
 
 .page-header__logo-name {
-    width: 134px;
     color:  $text-heading;
     font-family: Outfit;
     font-size: 24px;
     font-weight: 600;
     line-height: 133.333%;
-    padding-left: 10px;
 
 }
 
 
 // Menu
 .page-header__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
+    
+    @media (max-width: 575px) {
+        
+    }
+    
+    @media (min-width: 575px) {
+        
+    }
+    
+    @media (min-width: 768px) {
+        
+    }
+    
+    @media (min-width: 992px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 
 }
 
@@ -65,14 +94,14 @@
     align-items: center;
     list-style: none;
     padding-left: 0;
-    gap: 30px;
+    gap: 25px;
 
 }
 
 .page-header__item {
-    color: $text-text;
+    color:#7B88A8;
     font-family: Outfit;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 160%;
     text-transform: uppercase;
@@ -116,11 +145,6 @@
 
 }
 
-// .page-header__link:hover {
-//     text-decoration: underline;
-//     color: $colorSecondary;
-
-// }
 
 .active {
     position: relative;
@@ -156,49 +180,55 @@
 }
 
 .page-header__search {
-    width: 30px;
-    height: 40px;
-    padding: 3px;
-    color: $text-text;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.1s;
+    padding-top: 10px;
 
 }
 
-.page-header__search:hover {
-    color: $colorSecondary;
-    font-size: 22px;
+.page-header__search svg {
+    padding: 4px;
+    color: $text-text;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+
+.page-header__search svg:hover {
+    transform: scale(1.2);
 
 }
 
 .page-header__bag {
-    color: $text-text;
-    width: 30px;
-    height: 40px;
-    padding: 3px;
-    font-size: 20px;
-    cursor: pointer;
+    padding-top: 10px;
     position: relative;
-    transition: all 0.1s;
-
 
 }
 
-.page-header__bag:hover {
-    color: $colorSecondary;
-    font-size: 22px;
+.page-header__bag svg {
+    padding: 4px;
+    color: $text-text;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+
+.page-header__bag svg:hover {
+    transform: scale(1.2);
+
 }
 
 .page-header__bag::before {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: #EF3737;
-    top: 8px;
-    right: 8px;
+    top: 30%;
+    right: 12%;
 
 }
 
@@ -206,29 +236,49 @@
 
 }
 
-.btn-signup {
+.page-header__signup {
     text-align: center;
-    width: 130px;
+    width: 129px;
     height: 48px;
     padding: 13px 24px;
     border-radius: 5px;
     background-color: $colorSecondary;
     color: $colorPrimary;
     font-family: Outfit;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 171.429%;
+    line-height: 170%;
     text-transform: uppercase;
+
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: all 0.4s;
+    transition: all 0.3s;
+
+    display: none;
+
+    @media (max-width: 575px) {
+        
+    }
+        
+    @media (min-width: 575px) {
+            
+    }
+        
+    @media (min-width: 768px) {
+        
+    }
+    
+    @media (min-width: 992px) {
+        display: flex;
+                 
+    }
 
 }
 
-.btn-signup:hover {
+.page-header__signup:hover {
     background-color: #85a0fa;
-}
 
+}
 

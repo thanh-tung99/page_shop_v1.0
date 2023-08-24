@@ -1,0 +1,109 @@
+.brand {
+  padding-top: 40px;
+}
+
+.brand__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E7E5EA;
+  margin-bottom: 10px;
+}
+
+.brand__heading {
+  color: #2D3958;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 155.556%;
+}
+
+.brand__icon {
+  font-size: 14px;
+  color: #888682;
+  padding: 6px;
+}
+
+.brand__icon:hover {
+  cursor: pointer;
+  color: #4F77FF;
+}
+
+.brand__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.brand__item {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.brand__check {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 20px;
+}
+.brand__check span {
+  position: relative;
+  display: block;
+  background-color: #E7E5EA;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.brand__check span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: black;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: 0.3s;
+}
+.brand__check span .brand__tick {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.4s;
+  transform: translate(-50%, -50%);
+}
+.brand__check .brand__input {
+  display: none;
+}
+.brand__check .brand__input:checked ~ span::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.brand__check .brand__input:checked ~ span .brand__tick {
+  color: white;
+  display: block;
+  opacity: 1;
+}
+.brand__check .brand__text {
+  color: #7B88A8;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 170%;
+  margin-top: -3px;
+}
+
+.brand__check:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=brand.css.map */
