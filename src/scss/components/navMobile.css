@@ -1,0 +1,131 @@
+.nav-mobile {
+  display: block;
+}
+@media (min-width: 992px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.nav__bars-input {
+  display: block;
+  font-size: 16px;
+  color: #2D3958;
+  width: 88px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+@media (min-width: 992px) {
+  .nav__bars-input {
+    display: none;
+  }
+}
+
+.nav__bars-input:hover {
+  color: #4F77FF;
+}
+
+.nav__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: fadeIn linear 0.2s;
+}
+
+.nav-mobile__description {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: #fff;
+  z-index: 4;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+
+.nav-mobile__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 15px;
+}
+
+.nav-mobile__button--signup {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4F77FF;
+  color: #FFF;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 170%;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.nav-mobile__button--signup:hover {
+  background-color: #85a0fa;
+}
+
+.nav-mobile__close {
+  font-size: 24px;
+  color: #7B88A8;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.nav-mobile__close i:hover {
+  color: #34373f;
+}
+
+.nav-mobile__list {
+  margin: 50px 0px;
+}
+
+.nav-mobile__item {
+  list-style: none;
+}
+
+.nav-mobile__link {
+  text-decoration: none;
+  color: #7B88A8;
+  display: block;
+  padding: 8px 0px;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+
+.nav-mobile__link:hover {
+  color: #85a0fa;
+}
+
+.nav-mobile__active .nav-mobile__link {
+  color: #4F77FF;
+}
+
+.nav__input:checked ~ .nav__overlay {
+  display: block;
+}
+
+.nav__input:checked ~ .nav-mobile__description {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=navMobile.css.map */

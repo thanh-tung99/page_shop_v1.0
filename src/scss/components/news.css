@@ -1,0 +1,12 @@
+.news {
+  padding-top: 30px;
+}
+
+.news__left {
+  display: none;
+}
+@media (min-width: 992px) {
+  .news__left {
+    display: block;
+  }
+}/*# sourceMappingURL=news.css.map */

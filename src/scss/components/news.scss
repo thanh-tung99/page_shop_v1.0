@@ -1,0 +1,30 @@
+.news {
+    padding-top: 30px;
+
+}
+
+.news__left {
+    display: none;
+
+    @media (max-width: 575px) {
+        
+    }
+        
+    @media (min-width: 575px) {
+        
+    }
+        
+    @media (min-width: 768px) {
+      
+    }
+        
+    @media (min-width: 992px) {
+        display: block;
+            
+    }
+    
+    @media (min-width: 1200px) {
+               
+    }
+
+}

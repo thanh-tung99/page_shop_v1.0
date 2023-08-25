@@ -16,6 +16,7 @@
 }
 
 .footer__logo-img {
+    display: block;
     width: 32px;
     height: 44px;
 
@@ -23,13 +24,12 @@
 
 .footer__logo-name {
     width: 134px;
-    color:  #FFF;
     font-family: Outfit;
     font-size: 24px;
     font-weight: 600;
     line-height: 133.333%;
     padding-left: 10px;
-    padding-top: 10px;
+    color:  #FFF;
 
 }
 
@@ -86,11 +86,12 @@
 .footer__input {
     display: flex;
     padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 8px
 
 }
 
 .footer__input-mail {
-    width: 235px;
     height: 48px;
     border-radius: 5px;
     padding: 12px;
@@ -101,6 +102,8 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 162.5%;
+    width: 235px;
+
 }
 
 .footer__btn {
@@ -115,7 +118,6 @@
     font-weight: 500;
     line-height: 171.429%;
     text-transform: uppercase;
-    margin-left: 8px;
     transition: all 0.3s;
 
 }
@@ -140,10 +142,13 @@
 // socials
 .footer__bottom {
     margin-top: 100px;
+    padding-top: 28px;
     border-top: 1px solid #7B88A8;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 
 }
 
@@ -157,21 +162,29 @@
 }
 
 .footer__socials {
-    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 
 }
 
 .footer__socials-link {
     text-decoration: none;
-    font-size: 54px;
-    color: #4F77FF;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #4F77FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0px 6px;
     transition: all 0.3s;
 
 }
 
 .footer__socials-link:hover {
-    color: #85a0fa;
+    background-color: #85a0fa;
 
 }
 
