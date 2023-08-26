@@ -404,7 +404,7 @@ h6 {
   }
 }
 .page-header {
-  background-image: url(../../../assets/img/img_background-head.png);
+  background-image: url(../../assets/img/img_background-head.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1224,7 +1224,7 @@ h6 {
   }
 }
 .get-help {
-  background-image: url(../../../assets/img/img_background-bottom.png);
+  background-image: url(../../assets/img/img_background-bottom.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
